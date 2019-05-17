@@ -1,0 +1,25 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Compatibility-based Friend Finder app. This full-stack site will take in results from users' surveys, then compare their answer with those from other users. Express handles all routing.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarahMBeecroft/FriendFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SarahMBeecroft/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/SarahMBeecroft/FriendFinder#readme"
+}
