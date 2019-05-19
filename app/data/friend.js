@@ -95,4 +95,4 @@ var friends = [
   // 9. You tend to be more of a creative thinker, rather than a logical one
   // 10. When it comes to friends, you believe in quality over quantity
 
-  // 1-5, 1 being never, 5 being always
+  // 1-5, 1 being strongly disagree, 5 being strongly agree
