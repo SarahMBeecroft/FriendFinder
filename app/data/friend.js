@@ -1,6 +1,6 @@
 //  Friend DATA
 // =============================================================
-var friends = [
+var friendsArray = [
   {
     name: "Leslie Knope",
     photo: "https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Leslie_Knope_%28played_by_Amy_Poehler%29.png/240px-Leslie_Knope_%28played_by_Amy_Poehler%29.png",
@@ -82,6 +82,10 @@ var friends = [
     ]
   }];
   
+// Allows me to use data in other js files
+module.exports = friendsArray;
+
+
 
   // Questions
   // 1. When it comes to getting work done, you're more of a team player

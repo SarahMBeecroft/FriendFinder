@@ -6,14 +6,23 @@ var path = require("path");
 // =============================================================
 module.exports = function(app) {
 
+
   // Gets survey page 
   app.get("/survey", function (req, res) {
-    res.sendFile(path.join(__dirname + "/../app/public/survey.html"));
+    res.sendFile(path.join(__dirname + "/../public/survey.html"));
+  });
+
+  // Gets home page
+  app.get("/home", function (req, res) {
+    res.sendFile(path.join(__dirname + "/../public/home.html"));
   });
 
   // Use displays the home page by default
   app.use(function (req, res) {
-    res.sendFile(path.join(__dirname + "/../app/public/home.html"));
+    res.sendFile(path.join(__dirname + "/../public/home.html"));
 
   });
-};
+}
+
+
+
