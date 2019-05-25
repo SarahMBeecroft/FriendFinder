@@ -210,24 +210,25 @@
 
     </div>
 
-    <!-- Modal -->
-    <div id="results-modal" class="modal fade" role="dialog">
+    <!-- Results Modal -->
+    <div id="results-modal" class="modal fade" role="dialog" style="display: none;">
       <div class="modal-dialog">
-
-        <!-- Modal content-->
+        <!-- Modal content -->
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h2 class="modal-title"><strong>Check out your closest match!</strong></h2>
+            <h2 class="modal-title">
+              <strong>Check out your closest match!</strong>
+            </h2>
+            <button type="button" class="close" data-dismiss="modal">x</button>
           </div>
           <div class="modal-body">
             <h2 id="match-name"></h2>
+            <img id="match-img" src="" alt="">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>
-
       </div>
     </div>
 
@@ -257,6 +258,8 @@
 
       // Capture the form inputs
       $("#submit").on("click", function (event) {
+
+        // Prevents page from reloading
         event.preventDefault();
 
         // Form validation
@@ -279,8 +282,9 @@
 
         // If all required fields are filled
         if (validateForm()) {
-          // Create an object for the user"s data
-          var userData = {
+
+          // Creates an object for the user's data
+          var userInput = {
             name: $("#name").val(),
             photo: $("#photo").val(),
             scores: [
@@ -298,7 +302,7 @@
           };
 
           // AJAX post the data to the friends API.
-          $.post("/api/friends", userData, function (data) {
+          $.post("/api/friends", userInput, function (data) {
 
             // Grab the result from the AJAX post so that the best match's name and photo are displayed.
             $("#match-name").text(data.name);
@@ -318,3 +322,6 @@
 </body>
 
 </html>
+
+
+
