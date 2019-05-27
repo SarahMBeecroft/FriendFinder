@@ -51,6 +51,7 @@ module.exports = function (app) {
 
     // Sends the best match back to user
     res.json(friendsArray[closestMatch]);
+    console.log(friendsArray[closestMatch]);
 
   });
 };

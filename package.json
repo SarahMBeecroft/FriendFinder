@@ -4,6 +4,7 @@
   "description": "Compatibility-based Friend Finder app. This full-stack site will take in results from users' surveys, then compare their answer with those from other users. Express handles all routing.",
   "main": "server.js",
   "dependencies": {
+    "all": "0.0.0",
     "chosen": "0.0.2",
     "express": "^4.17.0",
     "nodemon": "^1.19.0",
