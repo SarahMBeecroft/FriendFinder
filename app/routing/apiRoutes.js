@@ -1,5 +1,5 @@
 // Pulls data from friends.js
-var friendsArray = require("../data/friend");
+var friendsArray = require("../data/friend.js");
 
 module.exports = function (app) {
 
@@ -44,14 +44,14 @@ module.exports = function (app) {
         closestMatch = i;
         minDifference = totalDifference;
       }
-    }
-
-    // Adds user's scores to friends array
-    friendsArray.push(userInput);
+    };
 
     // Sends the best match back to user
     res.json(friendsArray[closestMatch]);
     console.log(friendsArray[closestMatch]);
+
+    // Adds user's scores to friends array
+    friendsArray.push(userInput)
 
   });
 };
