@@ -3,7 +3,7 @@
 var friendsArray = [
   {
     name: "Leslie Knope",
-    photo: "https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Leslie_Knope_%28played_by_Amy_Poehler%29.png/240px-Leslie_Knope_%28played_by_Amy_Poehler%29.png",
+    photo: "http://fanaru.com/parks-and-recreation/image/102560-parks-and-recreation-leslie.jpg",
     scores: [
       5,
       4,
@@ -19,7 +19,7 @@ var friendsArray = [
   },
   {
     name: "Ron Swanson",
-    photo: "https://parade.com/wp-content/uploads/2013/10/tv-show-best-boss-ron-swanson.jpg",
+    photo: "http://fanaru.com/parks-and-recreation/image/20238-parks-and-recreation-ron-swanson.jpg",
     scores: [
       1,
       1,
@@ -35,7 +35,7 @@ var friendsArray = [
   },
   {
     name: "Andy Dwyer",
-    photo: "https://d1np8g368n9o2h.cloudfront.net/af55805c-191d-48fb-858a-b0d1bcf4f608",
+    photo: "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Andy_Dwyer.jpg/175px-Andy_Dwyer.jpg",
     scores: [
       4,
       5,
@@ -63,6 +63,22 @@ var friendsArray = [
       5,
       4,
       3
+    ]
+  },
+  {
+    name: "Tom Haverford",
+    photo: "http://uwishunu.wpengine.com/wp-content/uploads/2012/02/tom-haverfood-aziz-parks-and-rec-140uw.jpg",
+    scores: [
+      3,
+      5,
+      4,
+      4,
+      5,
+      4,
+      2,
+      3,
+      5,
+      2
     ]
   },
   {

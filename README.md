@@ -6,19 +6,14 @@ Go to the survey to answer a set of 10 questions either by clicking on the "surv
 
 You can view a list of friend data in JSON format by going to https://morning-chamber-66567.herokuapp.com/api/friends
 
-
 ### Technologies used
-*HTML
-*Bootstrap CSS
-*JavaScript
-*jQuery
-*Modal
-*Express
-*Path
-*Heroku
+* HTML
+* Bootstrap CSS
+* JavaScript
+* jQuery
+* Modal
+* Express
+* Path
+* Heroku
 
-
-Heroku link: https://morning-chamber-66567.herokuapp.com/
-
-
-**Note** Still working on getting results to display back to user
+**Heroku link:** https://morning-chamber-66567.herokuapp.com/
