@@ -1,7 +1,7 @@
 // Pulls data from friends.js
-var friendsArray = require('../data/friend.js');
+let friendsArray = require('../data/friend.js');
 
-module.exports = function(app) {
+module.exports = (app) => {
   // Returns friends data from friends.js in JSON format
   app.get('/api/friends', function(req, res) {
     res.json(friendsArray);
@@ -11,25 +11,25 @@ module.exports = function(app) {
     console.log(req.body.scores);
 
     // Creates variable for user's input
-    var userInput = req.body;
+    let userInput = req.body;
 
     // For loop to gather user's scores and parse to integers
-    for (var i = 0; i < userInput.scores.length; i++) {
+    for (let i = 0; i < userInput.scores.length; i++) {
       userInput.scores[i] = parseInt(userInput.scores[i]);
     }
 
     // Creates variable for closest match and minimum difference (40) 10*4
-    var closestMatch = 0;
-    var minDifference = 40;
+    let closestMatch = 0;
+    let minDifference = 40;
 
     // For loop to compare user's scores with friend data to determine the total difference
-    for (var i = 0; i < friendsArray.length; i++) {
+    for (let i = 0; i < friendsArray.length; i++) {
       // Creates variable for total difference
       var totalDifference = 0;
 
-      for (var j = 0; j < friendsArray[i].scores.length; j++) {
+      for (let j = 0; j < friendsArray[i].scores.length; j++) {
         //Creates variable for difference to determine total difference
-        var difference = Math.abs(
+        let difference = Math.abs(
           userInput.scores[j] - friendsArray[i].scores[j]
         );
 

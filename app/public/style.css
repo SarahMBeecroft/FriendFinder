@@ -1,0 +1,67 @@
+html {
+  background: url(./parksandrec.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  color: rgb(39, 39, 39);
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  padding: 3em;
+  max-width: 900px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  border: 10px solid rgb(39, 39, 39);
+  outline: 10px inset rgba(39, 39, 39, 0.5);
+}
+
+.centered {
+  position: fixed;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.centered1 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+  position: relative;
+  bottom: 0.5em;
+  line-height: 1.2em;
+}
+
+h4 {
+  font-size: 1.5em;
+  position: relative;
+  bottom: 1.5em;
+}
+
+button {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  background-color: rgb(39, 39, 39);
+  border: rgb(39, 39, 39);
+  padding: 0.6em;
+  position: relative;
+  bottom: 0.5em;
+}
+
+button:hover {
+  text-decoration: underline;
+  background-color: rgb(78, 78, 78);
+  border: rgb(78, 78, 78);
+  text-decoration: none;
+}
