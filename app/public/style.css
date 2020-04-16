@@ -65,3 +65,21 @@ button:hover {
   border: rgb(78, 78, 78);
   text-decoration: none;
 }
+
+#surveyContent {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3em;
+    position: relative;
+    bottom: 0.5em;
+    line-height: 1.2em;
+  }
+
+  .content {
+    padding: 2.5em;
+    max-width: 600px;
+  }
+}
